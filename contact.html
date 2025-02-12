@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GII-GTL</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">GII-GTL</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">AboutUs</a>
+        <a href="/contact.html">Contact</a>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="headerReportNumber"
+            placeholder="Enter report number"
+          />
+          <button onclick="verifyHeaderCode()">Search</button>
+        </div>
+      </nav>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">AboutUs</a>
+        <a href="/contact.html">Contact</a>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="mobileReportNumber"
+            placeholder="Enter report number"
+          />
+          <button onclick="verifyHeaderCode()">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner" id="home">
+      <h2>Contact GII-GTL</h2>
+    </div>
+
+    <section class="verification">
+      <h2>Query your certificate</h2>
+      <p>Please enter the identification report number</p>
+      <input type="text" id="reportNumber" placeholder="Enter report number" />
+      <button onclick="verifyCode()">Search</button>
+    </section>
+
+    <section class="products" id="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Gemstone 1" />
+        <h3>Ruby</h3>
+        <p>High-quality ruby gemstone. Perfect for jewelry.</p>
+        <button class="details-btn">View Details</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Gemstone 2" />
+        <h3>Sapphire</h3>
+        <p>Brilliant sapphire with a stunning blue hue.</p>
+        <button class="details-btn">View Details</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Gemstone 3" />
+        <h3>Emerald</h3>
+        <p>Elegant emerald for sophisticated styles.</p>
+        <button class="details-btn">View Details</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Gemstone 4" />
+        <h3>Diamond</h3>
+        <p>Elegant diamond for sophisticated styles.</p>
+        <button class="details-btn">View Details</button>
+      </div>
+    </section>
+
+    <!-- <section class="verification">
+      <h2>Query your certificate</h2>
+      <p>Please enter the identification report number</p>
+      <input type="text" id="reportNumber" placeholder="Enter report number" />
+      <button onclick="verifyCode()">Search</button>
+    </section> -->
+
+    <!-- <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <h3>GRADING REPORT</h3>
+        <p><strong>REPORT No.:</strong> <span id="reportNo"></span></p>
+        <p><strong>LAB Area:</strong> U.S.A</p>
+        <p><strong>DESCRIPTION:</strong> Moissanite</p>
+        <p><strong>Measurements:</strong> <span id="measurements"></span></p>
+        <p><strong>Shape:</strong> Round brilliant</p>
+
+        <h3>GRADING RESULTS</h3>
+        <p><strong>Weight:</strong> <span id="weight"></span></p>
+        <p><strong>Color:</strong> D</p>
+        <p><strong>Clarity:</strong> VVS1</p>
+        <p><strong>CutGRAde:</strong> EXCELLENT</p>
+
+        <h3>PROPORTION</h3>
+        <p><strong>Depth:</strong> 62.5%</p>
+        <p><strong>Table:</strong> 56.0%</p>
+        <p><strong>CROWN ANGLE:</strong> 15.5%</p>
+        <p><strong>PAVILION ANGLE:</strong> 43.0%</p>
+        <p><strong>GIRDLE:</strong> 4.0%</p>
+        <p><strong>CULET:</strong> NONE</p>
+
+        <h3>ADDITIONAL INFORMATION</h3>
+        <p><strong>Polish:</strong> EXCELLENT</p>
+        <p><strong>Symmetry:</strong> EXCELLENT</p>
+        <p><strong>FLUORESCENCE:</strong> NONE</p>
+      </div>
+    </div> -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <h3>GRADING REPORT</h3>
+        <p><strong>REPORT No.:</strong> ONYX<span id="reportNo"></span></p>
+        <p><strong>LAB Area:</strong> U.S.A</p>
+        <p><strong>DESCRIPTION:</strong> Green Onyx</p>
+        <p><strong>Measurements:</strong> <span id="measurements"></span></p>
+        <!-- <p><strong>Shape:</strong>Oval Modified</p> -->
+        <p><strong>Shape:</strong> <span id="Shape"></span></p>
+
+        <h3>GRADING RESULTS</h3>
+        <p><strong>Weight:</strong> <span id="weight"></span></p>
+        <p><strong>Color:</strong> Green</p>
+        <p><strong>Species:</strong> Chalcedony</p>
+        <p><strong>CutGRAde:</strong> Excellent</p>
+
+        <h3>PROPORTION</h3>
+        <p><strong>Refractive-Index:</strong> ~ 1.54</p>
+        <p><strong>Specific-GRAvity:</strong> 2.55 mean</p>
+        <p><strong>Optic-Character:</strong> AGG</p>
+        <p><strong>Comments:</strong> None</p>
+        <!-- <p><strong>GIRDLE:</strong> 4.0%</p> -->
+        <!-- <p><strong>CULET:</strong> NONE</p> -->
+
+        <h3>ADDITIONAL INFORMATION</h3>
+        <p><strong>Polish:</strong> Excellent</p>
+        <p><strong>Symmetry:</strong> Excellent</p>
+        <!-- <p><strong>FLUORESCENCE:</strong> NONE</p> -->
+      </div>
+    </div>
+
+    <footer>&copy; 2025 GII-GTL | All Rights Reserved</footer>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
