@@ -23,6 +23,7 @@ function processVerification(reportNumber) {
   const modal1 = document.getElementById("modal1");
   const modal2 = document.getElementById("modal2");
   const modal3 = document.getElementById("modal3");
+  const modal4 = document.getElementById("modal4");
 
   // Define the range of codes and associated data
   // const seriesStart = 6501008000;
@@ -437,6 +438,14 @@ function processVerification(reportNumber) {
     modal3.style.display = "flex";
   }
 
+  else if (reportNumber == 1620) {
+    document.getElementById("reportNo4").textContent = reportNumber;
+    document.getElementById("measurements4").textContent = "~ 5.00 mm";
+    document.getElementById("weight4").textContent = "50.02ct";
+    document.getElementById("Shape4").textContent = "Round Brilliant";
+    modal4.style.display = "flex";
+  }
+
 
 
   else {
@@ -452,6 +461,8 @@ function closeModal() {
   const modal1 = document.getElementById("modal1");
   const modal2 = document.getElementById("modal2");
   const modal3 = document.getElementById("modal3");
+  const modal4 = document.getElementById("modal4");
+  modal4.style.display = "none";
   modal3.style.display = "none";
   modal2.style.display = "none";
   modal1.style.display = "none";
@@ -486,6 +497,12 @@ window.onclick = function (event) {
 window.onclick = function (event) {
   const modal3 = document.getElementById("modal3");
   if (event.target === modal3) {
-    modal2.style.display = "none";
+    modal3.style.display = "none";
+  }
+};
+window.onclick = function (event) {
+  const modal4 = document.getElementById("modal4");
+  if (event.target === modal4) {
+    modal4.style.display = "none";
   }
 };
