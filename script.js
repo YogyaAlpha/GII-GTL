@@ -447,6 +447,14 @@ function processVerification(reportNumber) {
     modal4.style.display = "flex";
   }
 
+  else if (reportNumber == 1699) {
+    document.getElementById("reportNo4").textContent = reportNumber;
+    document.getElementById("measurements4").textContent = "~ 5.00 mm";
+    document.getElementById("weight4").textContent = "50.60ct";
+    document.getElementById("Shape4").textContent = "Round Brilliant";
+    modal4.style.display = "flex";
+  }
+
   else if (reportNumber == 1101) {
     document.getElementById("reportNoy").textContent = reportNumber;
     document.getElementById("measurementsy").textContent = "N/A";
