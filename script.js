@@ -25,6 +25,9 @@ function processVerification(reportNumber) {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalrc = document.getElementById("modalrc");
+  const modalsptk = document.getElementById("modalsptk");
+  const modalbdae = document.getElementById("modalbdae");
 
   // Define the range of codes and associated data
   // const seriesStart = 6501008000;
@@ -447,6 +450,14 @@ function processVerification(reportNumber) {
     modal3.style.display = "flex";
   }
 
+  else if (reportNumber == 8999) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "6.25 ratti";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
   else if (reportNumber == 1620) {
     document.getElementById("reportNo4").textContent = reportNumber;
     document.getElementById("measurements4").textContent = "~ 5.00 mm";
@@ -470,12 +481,53 @@ function processVerification(reportNumber) {
     document.getElementById("Shapey").textContent = "Cushion Modified";
     modaly.style.display = "flex";
   }
+  
   else if (reportNumber == 1221) {
     document.getElementById("reportNoy").textContent = reportNumber;
     document.getElementById("measurementsy").textContent = "N/A";
     document.getElementById("weighty").textContent = "8.16 ratti";
     document.getElementById("Shapey").textContent = "Oval Modified";
     modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 8834) {
+    document.getElementById("reportNorc").textContent = reportNumber;
+    document.getElementById("measurementsrc").textContent = "N/A";
+    document.getElementById("weightrc").textContent = "1.562 grams";
+    document.getElementById("Shaperc").textContent = "Triangular Cabochon";
+    modalrc.style.display = "flex";
+  }
+
+  else if (reportNumber == 34286) {
+    document.getElementById("reportNosptk").textContent = reportNumber;
+    document.getElementById("measurementssptk").textContent = "N/A";
+    document.getElementById("weightsptk").textContent = "10.00 grams";
+    document.getElementById("Shapesptk").textContent = "Oval Cabochon";
+    modalsptk.style.display = "flex";
+  }
+
+  else if (reportNumber == 34272) {
+    document.getElementById("reportNosptk").textContent = reportNumber;
+    document.getElementById("measurementssptk").textContent = "N/A";
+    document.getElementById("weightsptk").textContent = "11.00 grams";
+    document.getElementById("Shapesptk").textContent = "Capsule Cabochon";
+    modalsptk.style.display = "flex";
+  }
+
+  else if (reportNumber == 67859) {
+    document.getElementById("reportNobdae").textContent = reportNumber;
+    document.getElementById("measurementsbdae").textContent = "N/A";
+    document.getElementById("weightbdae").textContent = "18.75 cts";
+    document.getElementById("Shapebdae").textContent = "Oval Cabochon";
+    modalbdae.style.display = "flex";
+  }
+
+  else if (reportNumber == 56342) {
+    document.getElementById("reportNoemrld").textContent = reportNumber;
+    document.getElementById("measurementsemrld").textContent = "N/A";
+    document.getElementById("weightemrld").textContent = "7.70 cts";
+    document.getElementById("Shapeemrld").textContent = "Octagon Step Cut";
+    modalemrld.style.display = "flex";
   }
 
 
@@ -495,6 +547,14 @@ function closeModal() {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalrc = document.getElementById("modalrc");
+  const modalsptk = document.getElementById("modalsptk");
+  const modalbdae = document.getElementById("modalbdae");
+  const modalemrld = document.getElementById("modalemrld");
+  modalrc.style.display = "none";
+  modalemrld.style.display = "none";
+  modalbdae.style.display = "none";
+  modalsptk.style.display = "none";
   modal4.style.display = "none";
   modaly.style.display = "none";
   modal3.style.display = "none";
@@ -512,6 +572,13 @@ window.onclick = function (event) {
   const modal = document.getElementById("modal");
   if (event.target === modal) {
     modal.style.display = "none";
+  }
+};
+
+window.onclick = function (event) {
+  const modalrc = document.getElementById("modalrc");
+  if (event.target === modalrc) {
+    modalrc.style.display = "none";
   }
 };
 
@@ -543,6 +610,27 @@ window.onclick = function (event) {
 window.onclick = function (event) {
   const modaly = document.getElementById("modaly");
   if (event.target === modaly) {
-    modal4.style.display = "none";
+    modaly.style.display = "none";
+  }
+};
+
+window.onclick = function (event) {
+  const modalsptk = document.getElementById("modalsptk");
+  if (event.target === modalsptk) {
+    modalsptk.style.display = "none";
+  }
+};
+
+window.onclick = function (event) {
+  const modalbdae = document.getElementById("modalbdae");
+  if (event.target === modalbdae) {
+    modalbdae.style.display = "none";
+  }
+};
+
+window.onclick = function (event) {
+  const modalemrld = document.getElementById("modalemrld");
+  if (event.target === modalemrld) {
+    modalemrld.style.display = "none";
   }
 };
