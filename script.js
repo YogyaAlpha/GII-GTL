@@ -539,6 +539,14 @@ function processVerification(reportNumber) {
     modalemrld.style.display = "flex";
   }
 
+    else if (reportNumber == 19725) {
+    document.getElementById("reportNoemrld").textContent = reportNumber;
+    document.getElementById("measurementsemrld").textContent = "N/A";
+    document.getElementById("weightemrld").textContent = "5.25 ratti";
+    document.getElementById("Shapeemrld").textContent = "Oval Modified";
+    modalemrld.style.display = "flex";
+  }
+
 
   else {
     alert("Invalid report number. Please try again.");
