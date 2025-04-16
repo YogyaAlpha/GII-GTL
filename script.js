@@ -12,11 +12,20 @@ function verifyCode() {
   processVerification(reportNumber);
 }
 
+// function verifyHeaderCode() {
+//   const reportNumber =
+//     document.getElementById("headerReportNumber").value;
+//   processVerification(reportNumber);
+// }
+
 function verifyHeaderCode() {
-  const reportNumber =
-    document.getElementById("headerReportNumber").value;
+  const headerInput = document.getElementById("headerReportNumber");
+  const mobileInput = document.getElementById("mobileReportNumber");
+
+  const reportNumber = headerInput?.value || mobileInput?.value;
   processVerification(reportNumber);
 }
+
 
 function processVerification(reportNumber) {
   const modal = document.getElementById("modal");
@@ -28,6 +37,7 @@ function processVerification(reportNumber) {
   const modalrc = document.getElementById("modalrc");
   const modalsptk = document.getElementById("modalsptk");
   const modalbdae = document.getElementById("modalbdae");
+  const modalopl = document.getElementById("modalopl");
 
   // Define the range of codes and associated data
   // const seriesStart = 6501008000;
@@ -489,14 +499,6 @@ function processVerification(reportNumber) {
     document.getElementById("Shapey").textContent = "Oval Modified";
     modaly.style.display = "flex";
   }
-    
-    else if (reportNumber == 23786956) {
-    document.getElementById("reportNoy").textContent = reportNumber;
-    document.getElementById("measurementsy").textContent = "N/A";
-    document.getElementById("weighty").textContent = "7.40 ratti";
-    document.getElementById("Shapey").textContent = "Oval Modified";
-    modaly.style.display = "flex";
-  }
 
   else if (reportNumber == 8834) {
     document.getElementById("reportNorc").textContent = reportNumber;
@@ -538,7 +540,6 @@ function processVerification(reportNumber) {
     modalemrld.style.display = "flex";
   }
 
-
   else if (reportNumber == 19724) {
     document.getElementById("reportNoemrld").textContent = reportNumber;
     document.getElementById("measurementsemrld").textContent = "N/A";
@@ -547,21 +548,22 @@ function processVerification(reportNumber) {
     modalemrld.style.display = "flex";
   }
 
-    else if (reportNumber == 19725) {
+  else if (reportNumber == 19725) {
     document.getElementById("reportNoemrld").textContent = reportNumber;
     document.getElementById("measurementsemrld").textContent = "N/A";
-    document.getElementById("weightemrld").textContent = "5.25 ratti";
+    document.getElementById("weightemrld").textContent = "8.25 ratti";
     document.getElementById("Shapeemrld").textContent = "Oval Modified";
     modalemrld.style.display = "flex";
   }
-      
-    else if (reportNumber == 19778945) {
-    document.getElementById("reportNoemrld").textContent = reportNumber;
-    document.getElementById("measurementsemrld").textContent = "N/A";
-    document.getElementById("weightemrld").textContent = "10.50 ratti";
-    document.getElementById("Shapeemrld").textContent = "Oval Modified";
-    modalemrld.style.display = "flex";
+
+  else if (reportNumber == 56785435) {
+    document.getElementById("reportNoopl").textContent = reportNumber;
+    document.getElementById("measurementsopl").textContent = "N/A";
+    document.getElementById("weightopl").textContent = "8.00 ratti";
+    document.getElementById("Shapeopl").textContent = "Oval Cabochon";
+    modalopl.style.display = "flex";
   }
+
 
 
   else {
@@ -583,7 +585,9 @@ function closeModal() {
   const modalsptk = document.getElementById("modalsptk");
   const modalbdae = document.getElementById("modalbdae");
   const modalemrld = document.getElementById("modalemrld");
+  const modalopl = document.getElementById("modalopl");
   modalrc.style.display = "none";
+  modalopl.style.display = "none";
   modalemrld.style.display = "none";
   modalbdae.style.display = "none";
   modalsptk.style.display = "none";
@@ -601,68 +605,10 @@ document.querySelectorAll(".details-btn").forEach((button) => {
 });
 
 window.onclick = function (event) {
-  const modal = document.getElementById("modal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modalrc = document.getElementById("modalrc");
-  if (event.target === modalrc) {
-    modalrc.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modal1 = document.getElementById("modal1");
-  if (event.target === modal1) {
-    modal1.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modal2 = document.getElementById("modal2");
-  if (event.target === modal2) {
-    modal2.style.display = "none";
-  }
-};
-window.onclick = function (event) {
-  const modal3 = document.getElementById("modal3");
-  if (event.target === modal3) {
-    modal3.style.display = "none";
-  }
-};
-window.onclick = function (event) {
-  const modal4 = document.getElementById("modal4");
-  if (event.target === modal4) {
-    modal4.style.display = "none";
-  }
-};
-window.onclick = function (event) {
-  const modaly = document.getElementById("modaly");
-  if (event.target === modaly) {
-    modaly.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modalsptk = document.getElementById("modalsptk");
-  if (event.target === modalsptk) {
-    modalsptk.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modalbdae = document.getElementById("modalbdae");
-  if (event.target === modalbdae) {
-    modalbdae.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
-  const modalemrld = document.getElementById("modalemrld");
-  if (event.target === modalemrld) {
-    modalemrld.style.display = "none";
-  }
+  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalrc, modalsptk, modalbdae, modalemrld, modalopl];
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
 };
