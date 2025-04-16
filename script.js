@@ -489,6 +489,14 @@ function processVerification(reportNumber) {
     document.getElementById("Shapey").textContent = "Oval Modified";
     modaly.style.display = "flex";
   }
+    
+    else if (reportNumber == 23786956) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "7.40 ratti";
+    document.getElementById("Shapey").textContent = "Oval Modified";
+    modaly.style.display = "flex";
+  }
 
   else if (reportNumber == 8834) {
     document.getElementById("reportNorc").textContent = reportNumber;
