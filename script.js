@@ -546,6 +546,14 @@ function processVerification(reportNumber) {
     document.getElementById("Shapeemrld").textContent = "Oval Modified";
     modalemrld.style.display = "flex";
   }
+      
+    else if (reportNumber == 19778945) {
+    document.getElementById("reportNoemrld").textContent = reportNumber;
+    document.getElementById("measurementsemrld").textContent = "N/A";
+    document.getElementById("weightemrld").textContent = "10.50 ratti";
+    document.getElementById("Shapeemrld").textContent = "Oval Modified";
+    modalemrld.style.display = "flex";
+  }
 
 
   else {
