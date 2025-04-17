@@ -515,6 +515,14 @@ function processVerification(reportNumber) {
     document.getElementById("Shaperc").textContent = "Triangular Cabochon";
     modalrc.style.display = "flex";
   }
+    
+  else if (reportNumber == 8835) {
+    document.getElementById("reportNorc").textContent = reportNumber;
+    document.getElementById("measurementsrc").textContent = "N/A";
+    document.getElementById("weightrc").textContent = "6.50 ratti";
+    document.getElementById("Shaperc").textContent = "Capsule Cabochon";
+    modalrc.style.display = "flex";
+  }
 
   else if (reportNumber == 34286) {
     document.getElementById("reportNosptk").textContent = reportNumber;
