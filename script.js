@@ -580,6 +580,14 @@ function processVerification(reportNumber) {
     modalopl.style.display = "flex";
   }
 
+    else if (reportNumber == 5678) {
+    document.getElementById("reportNoopl").textContent = reportNumber;
+    document.getElementById("measurementsopl").textContent = "N/A";
+    document.getElementById("weightopl").textContent = "8.50 ratti";
+    document.getElementById("Shapeopl").textContent = "Oval Cabochon";
+    modalopl.style.display = "flex";
+  }
+
 
 
   else {
