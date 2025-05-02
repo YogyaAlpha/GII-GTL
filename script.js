@@ -524,6 +524,15 @@ function processVerification(reportNumber) {
     modalrc.style.display = "flex";
   }
 
+  
+  else if (reportNumber == 8836) {
+    document.getElementById("reportNorc").textContent = reportNumber;
+    document.getElementById("measurementsrc").textContent = "N/A";
+    document.getElementById("weightrc").textContent = "6.25 ratti";
+    document.getElementById("Shaperc").textContent = "Capsule Cabochon";
+    modalrc.style.display = "flex";
+  }
+
   else if (reportNumber == 34286) {
     document.getElementById("reportNosptk").textContent = reportNumber;
     document.getElementById("measurementssptk").textContent = "N/A";
