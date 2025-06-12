@@ -492,6 +492,15 @@ function processVerification(reportNumber) {
     modaly.style.display = "flex";
   }
 
+  
+  else if (reportNumber == 1104) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "6.70 carats";
+    document.getElementById("Shapey").textContent = "Cushion Modified";
+    modaly.style.display = "flex";
+  }
+
       else if (reportNumber == 23786956) {
     document.getElementById("reportNoy").textContent = reportNumber;
     document.getElementById("measurementsy").textContent = "N/A";
