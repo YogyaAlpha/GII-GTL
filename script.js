@@ -34,6 +34,7 @@ function processVerification(reportNumber) {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
   const modalsptk = document.getElementById("modalsptk");
   const modalbdae = document.getElementById("modalbdae");
@@ -508,6 +509,14 @@ function processVerification(reportNumber) {
     document.getElementById("Shapey").textContent = "Oval Modified";
     modaly.style.display = "flex";
   }
+        
+      else if (reportNumber == 11880011) {
+    document.getElementById("reportNoyt").textContent = reportNumber;
+    document.getElementById("measurementsyt").textContent = "N/A";
+    document.getElementById("weightyt").textContent = "12.52 carats";
+    document.getElementById("Shapeyt").textContent = "Oval Modified";
+    modalyt.style.display = "flex";
+  }
   
   else if (reportNumber == 1221) {
     document.getElementById("reportNoy").textContent = reportNumber;
@@ -623,6 +632,7 @@ function closeModal() {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
   const modalsptk = document.getElementById("modalsptk");
   const modalbdae = document.getElementById("modalbdae");
@@ -635,6 +645,7 @@ function closeModal() {
   modalsptk.style.display = "none";
   modal4.style.display = "none";
   modaly.style.display = "none";
+  modalyt.style.display = "none";
   modal3.style.display = "none";
   modal2.style.display = "none";
   modal1.style.display = "none";
@@ -647,7 +658,7 @@ document.querySelectorAll(".details-btn").forEach((button) => {
 });
 
 window.onclick = function (event) {
-  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalrc, modalsptk, modalbdae, modalemrld, modalopl];
+  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl];
   modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
