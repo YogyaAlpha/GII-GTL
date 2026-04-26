@@ -39,6 +39,7 @@ function processVerification(reportNumber) {
   const modalsptk = document.getElementById("modalsptk");
   const modalbdae = document.getElementById("modalbdae");
   const modalopl = document.getElementById("modalopl");
+  const modalcat = document.getElementById("modalcat");
 
   // Define the range of codes and associated data
   // const seriesStart = 6501008000;
@@ -525,6 +526,14 @@ function processVerification(reportNumber) {
     document.getElementById("Shapey").textContent = "Oval Modified";
     modaly.style.display = "flex";
   }
+  
+  else if (reportNumber == 8765979) {
+    document.getElementById("reportNocat").textContent = reportNumber;
+    document.getElementById("measurementscat").textContent = "N/A";
+    document.getElementById("weightcat").textContent = "8.25 ratti";
+    document.getElementById("Shapecat").textContent = "Oval Modified";
+    modalcat.style.display = "flex";
+  }
 
   else if (reportNumber == 8834) {
     document.getElementById("reportNorc").textContent = reportNumber;
@@ -621,6 +630,7 @@ function processVerification(reportNumber) {
     alert("Invalid report number. Please try again.");
     modal.style.display = "none";
     modal1.style.display = "none";
+    modalcat.style.display = "none";
     modal2.style.display = "none";
   }
 }
@@ -638,6 +648,7 @@ function closeModal() {
   const modalbdae = document.getElementById("modalbdae");
   const modalemrld = document.getElementById("modalemrld");
   const modalopl = document.getElementById("modalopl");
+  const modalcat = document.getElementById("modalcat");
   modalrc.style.display = "none";
   modalopl.style.display = "none";
   modalemrld.style.display = "none";
@@ -650,6 +661,7 @@ function closeModal() {
   modal2.style.display = "none";
   modal1.style.display = "none";
   modal.style.display = "none";
+  modalcat.style.display = "none";
 }
 document.querySelectorAll(".details-btn").forEach((button) => {
   button.addEventListener("click", () => {
@@ -658,7 +670,7 @@ document.querySelectorAll(".details-btn").forEach((button) => {
 });
 
 window.onclick = function (event) {
-  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl];
+  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl, modalcat];
   modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
