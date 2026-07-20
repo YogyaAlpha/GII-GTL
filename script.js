@@ -34,6 +34,7 @@ function processVerification(reportNumber) {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalbs = document.getElementById("modalbs");
   const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
   const modalsptk = document.getElementById("modalsptk");
@@ -494,6 +495,39 @@ function processVerification(reportNumber) {
     modaly.style.display = "flex";
   }
 
+  else if (reportNumber == 98001120) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "8.78 ratti";
+    document.getElementById("Shapey").textContent = "Octagon Mixed";
+    modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 887745) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "5.90 carats";
+    document.getElementById("Shapey").textContent = "Long Cushion Mixed";
+    modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 367311) {
+    document.getElementById("reportNobs").textContent = reportNumber;
+    document.getElementById("measurementsbs").textContent = "N/A";
+    document.getElementById("weightbs").textContent = "5.60 carats";
+    document.getElementById("Shapebs").textContent = "Oval Mixed";
+    modalbs.style.display = "flex";
+  }
+
+
+  else if (reportNumber == 222716) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "3.40 carats";
+    document.getElementById("Shapey").textContent = "Oval Mixed";
+    modaly.style.display = "flex";
+  }
+
   
   else if (reportNumber == 1104) {
     document.getElementById("reportNoy").textContent = reportNumber;
@@ -642,6 +676,7 @@ function closeModal() {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalbs = document.getElementById("modalbs");
   const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
   const modalsptk = document.getElementById("modalsptk");
@@ -656,6 +691,7 @@ function closeModal() {
   modalsptk.style.display = "none";
   modal4.style.display = "none";
   modaly.style.display = "none";
+  modalbs.style.display = "none";
   modalyt.style.display = "none";
   modal3.style.display = "none";
   modal2.style.display = "none";
@@ -670,7 +706,7 @@ document.querySelectorAll(".details-btn").forEach((button) => {
 });
 
 window.onclick = function (event) {
-  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl, modalcat];
+  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalbs, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl, modalcat];
   modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
