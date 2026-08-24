@@ -34,6 +34,7 @@ function processVerification(reportNumber) {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalmozo = document.getElementById("modalmozo");
   const modalbs = document.getElementById("modalbs");
   const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
@@ -455,6 +456,46 @@ function processVerification(reportNumber) {
     modal3.style.display = "flex";
   }
 
+  else if (reportNumber == 7765401) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "5.88 ct";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
+  else if (reportNumber == 7765444) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "5.88 ct";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
+  else if (reportNumber == 7765448) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "3.90 ct";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
+  else if (reportNumber == 7765449) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "5.75  ct";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
+  else if (reportNumber == 7765441) {
+    document.getElementById("reportNo3").textContent = reportNumber;
+    document.getElementById("measurements3").textContent = "N/A";
+    document.getElementById("weight3").textContent = "2.34 ct";
+    document.getElementById("Shape3").textContent = "Oval Modified";
+    modal3.style.display = "flex";
+  }
+
   else if (reportNumber == 8211) {
     document.getElementById("reportNo3").textContent = reportNumber;
     document.getElementById("measurements3").textContent = "N/A";
@@ -495,11 +536,172 @@ function processVerification(reportNumber) {
     modaly.style.display = "flex";
   }
 
+  else if (reportNumber >= 500100100 && reportNumber <= 500100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "5.00 mm";
+    document.getElementById("weightmozo").textContent = "0.50 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 550100100 && reportNumber <= 550100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "5.50 mm";
+    document.getElementById("weightmozo").textContent = "0.60 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 600100100 && reportNumber <= 600100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "6.00 mm";
+    document.getElementById("weightmozo").textContent = "0.80 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 650100100 && reportNumber <= 650100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "6.50 mm";
+    document.getElementById("weightmozo").textContent = "1.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 700100100 && reportNumber <= 700100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "7.00 mm";
+    document.getElementById("weightmozo").textContent = "1.25 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 750100100 && reportNumber <= 750100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "7.50 mm";
+    document.getElementById("weightmozo").textContent = "1.50 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 800100100 && reportNumber <= 800100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "8.00 mm";
+    document.getElementById("weightmozo").textContent = "2.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 850100100 && reportNumber <= 850100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "8.50 mm";
+    document.getElementById("weightmozo").textContent = "2.50 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 900100100 && reportNumber <= 900100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "9.00 mm";
+    document.getElementById("weightmozo").textContent = "3.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 950100100 && reportNumber <= 950100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "9.50 mm";
+    document.getElementById("weightmozo").textContent = "3.50 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 100100100 && reportNumber <= 100100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "10.00 mm";
+    document.getElementById("weightmozo").textContent = "4.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 105100100 && reportNumber <= 105100600) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "10.50 mm";
+    document.getElementById("weightmozo").textContent = "4.50 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 110100100 && reportNumber <= 110100400) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "11.00 mm";
+    document.getElementById("weightmozo").textContent = "5.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 120100100 && reportNumber <= 120100400) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "12.00 mm";
+    document.getElementById("weightmozo").textContent = "6.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 130100100 && reportNumber <= 130100400) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "13.00 mm";
+    document.getElementById("weightmozo").textContent = "8.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+  else if (reportNumber >= 140100100 && reportNumber <= 140100400) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "14.00 mm";
+    document.getElementById("weightmozo").textContent = "10.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
+
+  else if (reportNumber >= 150100100 && reportNumber <= 150100400) {
+    document.getElementById("reportNomozo").textContent = reportNumber;
+    document.getElementById("measurementsmozo").textContent = "15.00 mm";
+    document.getElementById("weightmozo").textContent = "12.00 carat";
+    document.getElementById("Shapemozo").textContent = "Round Brilliant";
+    modalmozo.style.display = "flex";
+  }
+
   else if (reportNumber == 98001120) {
     document.getElementById("reportNoy").textContent = reportNumber;
     document.getElementById("measurementsy").textContent = "N/A";
     document.getElementById("weighty").textContent = "8.78 ratti";
     document.getElementById("Shapey").textContent = "Octagon Mixed";
+    modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 98001111) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "5.89 carats";
+    document.getElementById("Shapey").textContent = "Long Cushion Mixed";
+    modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 98001100) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "3.47  carats";
+    document.getElementById("Shapey").textContent = "Oval Mixed";
+    modaly.style.display = "flex";
+  }
+
+  else if (reportNumber == 98007771) {
+    document.getElementById("reportNoy").textContent = reportNumber;
+    document.getElementById("measurementsy").textContent = "N/A";
+    document.getElementById("weighty").textContent = "5.54 carats";
+    document.getElementById("Shapey").textContent = "Oval Mixed";
     modaly.style.display = "flex";
   }
 
@@ -516,6 +718,15 @@ function processVerification(reportNumber) {
     document.getElementById("measurementsbs").textContent = "N/A";
     document.getElementById("weightbs").textContent = "5.60 carats";
     document.getElementById("Shapebs").textContent = "Oval Mixed";
+    modalbs.style.display = "flex";
+  }
+
+
+  else if (reportNumber == 98007720) {
+    document.getElementById("reportNobs").textContent = reportNumber;
+    document.getElementById("measurementsbs").textContent = "N/A";
+    document.getElementById("weightbs").textContent = "9.34 ratti";
+    document.getElementById("Shapebs").textContent = "Cushion Mixed";
     modalbs.style.display = "flex";
   }
 
@@ -626,6 +837,14 @@ function processVerification(reportNumber) {
     modalemrld.style.display = "flex";
   }
 
+  else if (reportNumber == 1176341) {
+    document.getElementById("reportNoemrld").textContent = reportNumber;
+    document.getElementById("measurementsemrld").textContent = "N/A";
+    document.getElementById("weightemrld").textContent = "7.70 cts";
+    document.getElementById("Shapeemrld").textContent = "Octagon Step Cut";
+    modalemrld.style.display = "flex";
+  }
+
   else if (reportNumber == 19724) {
     document.getElementById("reportNoemrld").textContent = reportNumber;
     document.getElementById("measurementsemrld").textContent = "N/A";
@@ -676,6 +895,7 @@ function closeModal() {
   const modal3 = document.getElementById("modal3");
   const modal4 = document.getElementById("modal4");
   const modaly = document.getElementById("modaly");
+  const modalmozo = document.getElementById("modalmozo");
   const modalbs = document.getElementById("modalbs");
   const modalyt = document.getElementById("modalyt");
   const modalrc = document.getElementById("modalrc");
@@ -691,6 +911,7 @@ function closeModal() {
   modalsptk.style.display = "none";
   modal4.style.display = "none";
   modaly.style.display = "none";
+  modalmozo.style.display = "none";
   modalbs.style.display = "none";
   modalyt.style.display = "none";
   modal3.style.display = "none";
@@ -706,7 +927,7 @@ document.querySelectorAll(".details-btn").forEach((button) => {
 });
 
 window.onclick = function (event) {
-  const modals = [modal, modal1, modal2, modal3, modal4, modaly, modalbs, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl, modalcat];
+  const modals = [modal, modal1, modal2, modal3, modal4, modalmozo, modaly, modalbs, modalyt, modalrc, modalsptk, modalbdae, modalemrld, modalopl, modalcat];
   modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
